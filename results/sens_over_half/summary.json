@@ -1,0 +1,418 @@
+{
+  "data": {
+    "series": 30490,
+    "weeks": 273,
+    "test_weeks": 48,
+    "test_decisions": 1460477,
+    "train_decisions": 3272702,
+    "calibration_decisions": 1038622,
+    "zero_demand_share_test": 0.22087167411742875
+  },
+  "wape_test": {
+    "model": 0.36277170200424247,
+    "mean4_naive": 0.3852208585380897,
+    "lag52_seasonal_naive": 0.6615208983421326,
+    "lag1_naive": 0.4176580011844635
+  },
+  "interval_80_coverage": {
+    "overall": 0.7955044824396413,
+    "by_dept": {
+      "FOODS_1": 0.7985628858024691,
+      "FOODS_2": 0.7890004701556796,
+      "FOODS_3": 0.7998402940617276,
+      "HOBBIES_1": 0.788766330047287,
+      "HOBBIES_2": 0.8001287235382183,
+      "HOUSEHOLD_1": 0.7936783932615582,
+      "HOUSEHOLD_2": 0.7982706368377822
+    },
+    "top10pct_evr": 0.7906728373086508,
+    "rest": 0.7960414148107628
+  },
+  "order_up_to_service_level": {
+    "FOODS_1": {
+      "target": 0.6,
+      "achieved": 0.5860628858024691
+    },
+    "FOODS_2": {
+      "target": 0.6,
+      "achieved": 0.5626337170296727
+    },
+    "FOODS_3": {
+      "target": 0.6,
+      "achieved": 0.5813118702072375
+    },
+    "HOBBIES_1": {
+      "target": 0.8823529411764707,
+      "achieved": 0.8701911517191633
+    },
+    "HOBBIES_2": {
+      "target": 0.8823529411764707,
+      "achieved": 0.8925158455877209
+    },
+    "HOUSEHOLD_1": {
+      "target": 0.8823529411764707,
+      "achieved": 0.8706947644410602
+    },
+    "HOUSEHOLD_2": {
+      "target": 0.8823529411764707,
+      "achieved": 0.8799561387536771
+    }
+  },
+  "assumptions": {
+    "margin": 0.3,
+    "over_foods": 0.2,
+    "over_household": 0.04,
+    "over_hobbies": 0.04,
+    "review_cost": 0.67,
+    "rho_assumed": 0.5,
+    "context_planner": {
+      "price_drop": 0.95,
+      "rho_with_context": 0.7,
+      "rho_without_context": 0.3
+    }
+  },
+  "context_rows_share": 0.46399498246120957,
+  "spearman_evr_ctx_vs_risk": 0.8966843050842156,
+  "headline": {
+    "0.3": {
+      "loss_all_auto": 2827776.969340352,
+      "loss_all_human": 1979443.8785382463,
+      "net_all_human": 2957963.468538246,
+      "savings_all_human_pct": 30.000000000000004,
+      "random_fraction_for_50pct": 0.5,
+      "random_fraction_for_80pct": 0.81,
+      "random_best_net_fraction": 0.0,
+      "random_best_net_cost": 2827776.969340352,
+      "random_capture_at_5pct": 0.05087133541129254,
+      "random_capture_at_10pct": 0.10045304495210498,
+      "random_capture_at_20pct": 0.20227749702156325,
+      "width_fraction_for_50pct": 0.69,
+      "width_fraction_for_80pct": 0.92,
+      "width_best_net_fraction": 0.0,
+      "width_best_net_cost": 2827776.969340352,
+      "width_capture_at_5pct": 0.03913342073961021,
+      "width_capture_at_10pct": 0.07288040997274536,
+      "width_capture_at_20pct": 0.1283957878132002,
+      "value_fraction_for_50pct": 0.19,
+      "value_fraction_for_80pct": 0.51,
+      "value_best_net_fraction": 0.22,
+      "value_best_net_cost": 2577564.8918748675,
+      "value_capture_at_5pct": 0.2664596309060908,
+      "value_capture_at_10pct": 0.3760907942541559,
+      "value_capture_at_20pct": 0.5244898008978948,
+      "risk_fraction_for_50pct": 0.16,
+      "risk_fraction_for_80pct": 0.46,
+      "risk_best_net_fraction": 0.24,
+      "risk_best_net_cost": 2547472.724217952,
+      "risk_capture_at_5pct": 0.2874271334623902,
+      "risk_capture_at_10pct": 0.4032452956643164,
+      "risk_capture_at_20pct": 0.5585114586242355,
+      "evr_fraction_for_50pct": 0.16,
+      "evr_fraction_for_80pct": 0.46,
+      "evr_best_net_fraction": 0.24,
+      "evr_best_net_cost": 2547472.724217952,
+      "evr_capture_at_5pct": 0.2874271334623902,
+      "evr_capture_at_10pct": 0.4032452956643164,
+      "evr_capture_at_20pct": 0.5585114586242355,
+      "evr_ctx_fraction_for_50pct": 0.16,
+      "evr_ctx_fraction_for_80pct": 0.46,
+      "evr_ctx_best_net_fraction": 0.24,
+      "evr_ctx_best_net_cost": 2547823.8684478234,
+      "evr_ctx_capture_at_5pct": 0.286320099365164,
+      "evr_ctx_capture_at_10pct": 0.4023973862277697,
+      "evr_ctx_capture_at_20pct": 0.557895932124311,
+      "oracle_fraction_for_50pct": 0.08,
+      "oracle_fraction_for_80pct": 0.3,
+      "oracle_best_net_fraction": 0.21,
+      "oracle_best_net_cost": 2422435.274246738,
+      "oracle_capture_at_5pct": 0.40990517315309294,
+      "oracle_capture_at_10pct": 0.5477404137197293,
+      "oracle_capture_at_20pct": 0.7083603057062311,
+      "threshold_fraction_reviewed": 0.43540226925860526,
+      "threshold_net_cost": 2588915.2719837395,
+      "net_all_auto": 2827776.969340352
+    },
+    "0.5": {
+      "loss_all_auto": 2827776.969340352,
+      "loss_all_human": 1413888.484670176,
+      "net_all_human": 2392408.074670176,
+      "savings_all_human_pct": 50.0,
+      "random_fraction_for_50pct": 0.5,
+      "random_fraction_for_80pct": 0.81,
+      "random_best_net_fraction": 1.0,
+      "random_best_net_cost": 2392408.074670176,
+      "random_capture_at_5pct": 0.05087133541129276,
+      "random_capture_at_10pct": 0.10045304495210487,
+      "random_capture_at_20pct": 0.2022774970215637,
+      "width_fraction_for_50pct": 0.69,
+      "width_fraction_for_80pct": 0.92,
+      "width_best_net_fraction": 1.0,
+      "width_best_net_cost": 2392408.074670176,
+      "width_capture_at_5pct": 0.039133420739610215,
+      "width_capture_at_10pct": 0.07288040997274527,
+      "width_capture_at_20pct": 0.1283957878132001,
+      "value_fraction_for_50pct": 0.19,
+      "value_fraction_for_80pct": 0.51,
+      "value_best_net_fraction": 0.5,
+      "value_best_net_cost": 2187914.136751051,
+      "value_capture_at_5pct": 0.26645963090609104,
+      "value_capture_at_10pct": 0.37609079425415576,
+      "value_capture_at_20pct": 0.5244898008978949,
+      "risk_fraction_for_50pct": 0.16,
+      "risk_fraction_for_80pct": 0.46,
+      "risk_best_net_fraction": 0.46,
+      "risk_best_net_cost": 2145588.7904745615,
+      "risk_capture_at_5pct": 0.2874271334623902,
+      "risk_capture_at_10pct": 0.40324529566431605,
+      "risk_capture_at_20pct": 0.5585114586242353,
+      "evr_fraction_for_50pct": 0.16,
+      "evr_fraction_for_80pct": 0.46,
+      "evr_best_net_fraction": 0.46,
+      "evr_best_net_cost": 2145588.7904745615,
+      "evr_capture_at_5pct": 0.2874271334623902,
+      "evr_capture_at_10pct": 0.40324529566431605,
+      "evr_capture_at_20pct": 0.5585114586242353,
+      "evr_ctx_fraction_for_50pct": 0.16,
+      "evr_ctx_fraction_for_80pct": 0.46,
+      "evr_ctx_best_net_fraction": 0.46,
+      "evr_ctx_best_net_cost": 2145564.3230661126,
+      "evr_ctx_capture_at_5pct": 0.28632009936516417,
+      "evr_ctx_capture_at_10pct": 0.4023973862277698,
+      "evr_ctx_capture_at_20pct": 0.5578959321243111,
+      "oracle_fraction_for_50pct": 0.08,
+      "oracle_fraction_for_80pct": 0.3,
+      "oracle_best_net_fraction": 0.33,
+      "oracle_best_net_cost": 1982191.1287497932,
+      "oracle_capture_at_5pct": 0.40990517315309277,
+      "oracle_capture_at_10pct": 0.5477404137197291,
+      "oracle_capture_at_20pct": 0.7083603057062312,
+      "threshold_fraction_reviewed": 0.43540226925860526,
+      "threshold_net_cost": 2145641.0404126644,
+      "net_all_auto": 2827776.969340352
+    },
+    "0.7": {
+      "loss_all_auto": 2827776.969340352,
+      "loss_all_human": 848333.0908021056,
+      "net_all_human": 1826852.6808021057,
+      "savings_all_human_pct": 70.0,
+      "random_fraction_for_50pct": 0.5,
+      "random_fraction_for_80pct": 0.81,
+      "random_best_net_fraction": 1.0,
+      "random_best_net_cost": 1826852.6808021057,
+      "random_capture_at_5pct": 0.05087133541129286,
+      "random_capture_at_10pct": 0.10045304495210483,
+      "random_capture_at_20pct": 0.20227749702156342,
+      "width_fraction_for_50pct": 0.69,
+      "width_fraction_for_80pct": 0.92,
+      "width_best_net_fraction": 1.0,
+      "width_best_net_cost": 1826852.6808021057,
+      "width_capture_at_5pct": 0.039133420739610215,
+      "width_capture_at_10pct": 0.07288040997274521,
+      "width_capture_at_20pct": 0.12839578781320005,
+      "value_fraction_for_50pct": 0.19,
+      "value_fraction_for_80pct": 0.51,
+      "value_best_net_fraction": 0.66,
+      "value_best_net_cost": 1709471.4516632142,
+      "value_capture_at_5pct": 0.26645963090609087,
+      "value_capture_at_10pct": 0.37609079425415587,
+      "value_capture_at_20pct": 0.5244898008978949,
+      "risk_fraction_for_50pct": 0.16,
+      "risk_fraction_for_80pct": 0.46,
+      "risk_best_net_fraction": 0.59,
+      "risk_best_net_cost": 1669746.7147884015,
+      "risk_capture_at_5pct": 0.28742713346239024,
+      "risk_capture_at_10pct": 0.40324529566431616,
+      "risk_capture_at_20pct": 0.5585114586242353,
+      "evr_fraction_for_50pct": 0.16,
+      "evr_fraction_for_80pct": 0.46,
+      "evr_best_net_fraction": 0.59,
+      "evr_best_net_cost": 1669746.7147884015,
+      "evr_capture_at_5pct": 0.28742713346239024,
+      "evr_capture_at_10pct": 0.40324529566431616,
+      "evr_capture_at_20pct": 0.5585114586242353,
+      "evr_ctx_fraction_for_50pct": 0.16,
+      "evr_ctx_fraction_for_80pct": 0.46,
+      "evr_ctx_best_net_fraction": 0.59,
+      "evr_ctx_best_net_cost": 1669273.9610173283,
+      "evr_ctx_capture_at_5pct": 0.28632009936516395,
+      "evr_ctx_capture_at_10pct": 0.4023973862277699,
+      "evr_ctx_capture_at_20pct": 0.5578959321243111,
+      "oracle_fraction_for_50pct": 0.08,
+      "oracle_fraction_for_80pct": 0.3,
+      "oracle_best_net_fraction": 0.42,
+      "oracle_best_net_cost": 1498252.180603385,
+      "oracle_capture_at_5pct": 0.4099051731530929,
+      "oracle_capture_at_10pct": 0.5477404137197291,
+      "oracle_capture_at_20pct": 0.7083603057062313,
+      "threshold_fraction_reviewed": 0.43540226925860526,
+      "threshold_net_cost": 1702366.8088415894,
+      "net_all_auto": 2827776.969340352
+    },
+    "context": {
+      "loss_all_auto": 2827776.969340352,
+      "loss_all_human": 1454238.8451719994,
+      "net_all_human": 2432758.4351719995,
+      "savings_all_human_pct": 48.573071322833634,
+      "random_fraction_for_50pct": 0.5,
+      "random_fraction_for_80pct": 0.81,
+      "random_best_net_fraction": 1.0,
+      "random_best_net_cost": 2432758.4351719995,
+      "random_capture_at_5pct": 0.05101232551253007,
+      "random_capture_at_10pct": 0.10049231708012393,
+      "random_capture_at_20pct": 0.20312740717586272,
+      "width_fraction_for_50pct": 0.7,
+      "width_fraction_for_80pct": 0.92,
+      "width_best_net_fraction": 1.0,
+      "width_best_net_cost": 2432758.4351719995,
+      "width_capture_at_5pct": 0.03959200957138859,
+      "width_capture_at_10pct": 0.07319647393428473,
+      "width_capture_at_20pct": 0.1287934190456902,
+      "value_fraction_for_50pct": 0.19,
+      "value_fraction_for_80pct": 0.51,
+      "value_best_net_fraction": 0.47,
+      "value_best_net_cost": 2219742.563579918,
+      "value_capture_at_5pct": 0.2667807286604446,
+      "value_capture_at_10pct": 0.3764589441015275,
+      "value_capture_at_20pct": 0.5247591004318422,
+      "risk_fraction_for_50pct": 0.16,
+      "risk_fraction_for_80pct": 0.46,
+      "risk_best_net_fraction": 0.43,
+      "risk_best_net_cost": 2176764.4709381526,
+      "risk_capture_at_5pct": 0.28798140275186157,
+      "risk_capture_at_10pct": 0.40416026103035907,
+      "risk_capture_at_20pct": 0.5592088889736253,
+      "evr_fraction_for_50pct": 0.16,
+      "evr_fraction_for_80pct": 0.46,
+      "evr_best_net_fraction": 0.43,
+      "evr_best_net_cost": 2176764.4709381526,
+      "evr_capture_at_5pct": 0.28798140275186157,
+      "evr_capture_at_10pct": 0.40416026103035907,
+      "evr_capture_at_20pct": 0.5592088889736253,
+      "evr_ctx_fraction_for_50pct": 0.16,
+      "evr_ctx_fraction_for_80pct": 0.46,
+      "evr_ctx_best_net_fraction": 0.43,
+      "evr_ctx_best_net_cost": 2175044.6947486135,
+      "evr_ctx_capture_at_5pct": 0.2888037104091163,
+      "evr_ctx_capture_at_10pct": 0.4052859912687376,
+      "evr_ctx_capture_at_20pct": 0.5605999918127207,
+      "oracle_fraction_for_50pct": 0.08,
+      "oracle_fraction_for_80pct": 0.3,
+      "oracle_best_net_fraction": 0.32,
+      "oracle_best_net_cost": 2014388.9206066935,
+      "oracle_capture_at_5pct": 0.4118165197584787,
+      "oracle_capture_at_10pct": 0.5493373482898278,
+      "oracle_capture_at_20pct": 0.7094843587918008,
+      "threshold_fraction_reviewed": 0.43540226925860526,
+      "threshold_net_cost": 2176902.418223796,
+      "net_all_auto": 2827776.969340352
+    }
+  },
+  "workload": {
+    "1pct": {
+      "reviews_per_week": 305.0,
+      "planner_hours_per_week": 5.083333333333333
+    },
+    "5pct": {
+      "reviews_per_week": 1522.0,
+      "planner_hours_per_week": 25.366666666666667
+    },
+    "10pct": {
+      "reviews_per_week": 3043.0,
+      "planner_hours_per_week": 50.71666666666667
+    },
+    "20pct": {
+      "reviews_per_week": 6086.0,
+      "planner_hours_per_week": 101.43333333333334
+    }
+  },
+  "review_cost_sweep": {
+    "0.25": {
+      "review_cost": 0.1675,
+      "best_fraction": 0.94,
+      "net_cost": 1653815.3607735885,
+      "net_saving_vs_all_auto_pct": 41.515353625665135
+    },
+    "0.5": {
+      "review_cost": 0.335,
+      "best_fraction": 0.74,
+      "net_cost": 1861191.2648224386,
+      "net_saving_vs_all_auto_pct": 34.18182250573294
+    },
+    "1": {
+      "review_cost": 0.67,
+      "best_fraction": 0.46,
+      "net_cost": 2145588.7904745615,
+      "net_saving_vs_all_auto_pct": 24.124539744905253
+    },
+    "2": {
+      "review_cost": 1.34,
+      "best_fraction": 0.18,
+      "net_cost": 2428611.0740893194,
+      "net_saving_vs_all_auto_pct": 14.115890311679978
+    },
+    "4": {
+      "review_cost": 2.68,
+      "best_fraction": 0.05,
+      "net_cost": 2617158.3751561204,
+      "net_saving_vs_all_auto_pct": 7.4482038883485
+    },
+    "8": {
+      "review_cost": 5.36,
+      "best_fraction": 0.02,
+      "net_cost": 2730440.233258108,
+      "net_saving_vs_all_auto_pct": 3.4421645390566256
+    },
+    "16": {
+      "review_cost": 10.72,
+      "best_fraction": 0.01,
+      "net_cost": 2810461.4270263836,
+      "net_saving_vs_all_auto_pct": 0.6123376242790312
+    }
+  },
+  "bootstrap_over_test_weeks": {
+    "evr": {
+      "capture_10pct": 0.4032452956643164,
+      "ci95": [
+        0.39900555094173196,
+        0.40754439299606754
+      ]
+    },
+    "risk": {
+      "capture_10pct": 0.4032452956643164,
+      "ci95": [
+        0.39900555094173196,
+        0.40754439299606754
+      ]
+    },
+    "value": {
+      "capture_10pct": 0.3760907942541562,
+      "ci95": [
+        0.3712901204086385,
+        0.3811745112737265
+      ]
+    },
+    "width": {
+      "capture_10pct": 0.07288040997274518,
+      "ci95": [
+        0.06986535197025404,
+        0.07605396597444018
+      ]
+    },
+    "random": {
+      "capture_10pct": 0.10045304495210483,
+      "ci95": [
+        0.09869312760425157,
+        0.10243290798970409
+      ]
+    },
+    "evr_minus_value_capture_10pct": {
+      "diff": 0.027154501410160174,
+      "ci95": [
+        0.02405936580734876,
+        0.030213009334340537
+      ]
+    }
+  },
+  "spearman_evr_vs_risk": 0.9999999998675956,
+  "seconds": 118.44586253166199
+}

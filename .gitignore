@@ -1,0 +1,6 @@
+data/raw/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+results/run.log
+results/sens.log

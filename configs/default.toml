@@ -1,0 +1,36 @@
+# Every assumption of the study lives here. Costs are assumptions, not Walmart numbers.
+[data]
+raw_dir = "data/raw"
+
+[split]            # weekly index, 0-based; 273 complete weeks in M5
+first_week = 52    # needs a 52-week lag
+train_end = 190    # train: [52, 190)
+calib_end = 225    # calibration: [190, 225); test: [225, 273)
+
+[model]
+max_iter = 300
+learning_rate = 0.08
+max_leaf_nodes = 63
+train_rows = 1500000
+seed = 7
+
+[costs]
+margin = 0.30          # lost margin per unit short, as a share of price
+over_foods = 0.40      # spoilage and markdown per unit left, share of price (perishable)
+over_household = 0.08  # holding cost per unit left, share of price
+over_hobbies = 0.08
+review_cost = 0.67     # one planner review: 1 minute at 40 USD per hour
+
+[human]
+rho_assumed = 0.5          # share of the model error a planner removes, assumed by the router
+rho_true = [0.3, 0.5, 0.7] # evaluated, to test a wrong assumption
+
+[routing]
+mc_draws = 200
+fractions = [0.01, 0.02, 0.05, 0.10, 0.20, 0.30, 0.50, 0.75, 1.0]
+seed = 11
+
+[human.context]            # a planner who helps most where a visible cause exists
+price_drop = 0.95          # price this week below 95% of the 8-week mean, or an event week
+rho_with_context = 0.7
+rho_without_context = 0.3
