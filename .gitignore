@@ -4,3 +4,5 @@ __pycache__/
 .pytest_cache/
 results/run.log
 results/sens.log
+data/*.pkl
+data/*.log
